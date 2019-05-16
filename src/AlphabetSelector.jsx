@@ -1,16 +1,14 @@
 import React from 'react';
+import LetterCard from './LetterCard';
 
-const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
-const AlphabetSelector = ({ handleClickLetter }) => {
-    const handleClick = (event) => handleClickLetter(event.target.id);
-        return (
-            <div className="alphabet-board">
-                {alphabet.map(letter => {
-                    return <div onClick={handleClick} className="letter" key={letter} id={letter}>{letter.toUpperCase()}</div>
-                })}     
-            </div>
-        );
+const AlphabetSelector = ({ handleClickLetter, alphabet }) => {
+    return (
+        <div className="alphabet-board">
+            {
+              alphabet.map(letter => <LetterCard key={letter.name} letter={letter} handleClickLetter={handleClickLetter}/>)
+            }     
+        </div>
+    );
 }
 
 export default AlphabetSelector;

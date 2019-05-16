@@ -7,9 +7,28 @@
   flex-wrap: wrap;
   width: 30%;
   justify-content: space-evenly;
-
 }
 
-.letter {
+.letter-actived {
   margin: 5px;
 }
+
+.letter-disabled {
+  margin: 5px;
+  text-decoration: underline;
+}
+
+.correct-word {
+  display: flex;
+  justify-content: center;
+}
+
+.letter-visible p {
+  text-decoration: underline;
+}
+
+.letter-invisible p {
+  text-decoration: underline;
+  visibility: hidden;
+}
+

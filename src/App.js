@@ -1,12 +1,18 @@
 import React from 'react';
+import {Route, Switch} from 'react-router-dom';
 import './App.css';
+import Home from './Home';
+import Game from './Game';
 import words from './wordsArray';
 
-function App() {
+const App = () => {
   const wordSelected = words[Math.floor(Math.random() * words.length)];
   return (
     <div className="App">
-      Hello Hangman
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/hangman" component={Game} />
+      </Switch>
       <p>{wordSelected}</p>
     </div>
   );

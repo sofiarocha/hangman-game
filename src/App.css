@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+.alphabet-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  justify-content: space-evenly;
+
+}
+
+.letter {
+  margin: 5px;
+}

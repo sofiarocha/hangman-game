@@ -11,9 +11,8 @@ const App = () => {
     <div className="App">
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/hangman" component={Game} />
+        <Route path="/hangman" render={() => <Game wordSelected={wordSelected} />} />
       </Switch>
-      <p>{wordSelected}</p>
     </div>
   );
 }

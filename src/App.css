@@ -9,7 +9,12 @@
   justify-content: space-evenly;
 }
 
-.letter-actived {
+.disabled {
+  pointer-events: none;
+  color: #b9b3b3;
+}
+
+.letter-active {
   margin: 5px;
 }
 
@@ -23,12 +28,17 @@
   justify-content: center;
 }
 
-.letter-visible p {
-  text-decoration: underline;
+.underline {
+  border-bottom: 1px solid #000000;
+  margin: auto 5px;
+  width: 5%;
 }
 
-.letter-invisible p {
-  text-decoration: underline;
+p.letter-invisible {
   visibility: hidden;
 }
+
+
+
+
 

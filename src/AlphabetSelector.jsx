@@ -1,9 +1,10 @@
 import React from 'react';
 import LetterCard from './LetterCard';
 
-const AlphabetSelector = ({ handleClickLetter, alphabet }) => {
+const AlphabetSelector = ({ handleClickLetter, alphabet, gameFinish }) => {
+    const isBoardAvailable = () => gameFinish ? "alphabet-board disabled" : "alphabet-board active";
     return (
-        <div className="alphabet-board">
+        <div className={isBoardAvailable()}>
             {
               alphabet.map(letter => <LetterCard key={letter.name} letter={letter} handleClickLetter={handleClickLetter}/>)
             }     

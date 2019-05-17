@@ -5,7 +5,7 @@ const CorrectWord = ({ correctLetter }) => {
     return (
         <div className="underline">
             <p className={isLetterCorrect()}>
-                {correctLetter.name}
+                {correctLetter.name.toUpperCase()}
             </p>
         </div>
     );

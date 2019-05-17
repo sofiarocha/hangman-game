@@ -1,0 +1,164 @@
+$height: 85vh;
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  max-width: 648px;
+  margin: auto;
+  border: 1px solid #000000;
+  border-radius: 5%;
+  align-items: center;
+}
+
+.Home {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: $height;
+  justify-content: space-between;
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+.button-options {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Home, .game, .about, .score {
+  button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    width: 120px;
+    padding: 0;
+    margin: 10px auto;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    border-radius: 5px;
+    transition: all 0.2s ;
+    background: #A74982;
+    border: none;
+    box-shadow: 0px 5px 0px 0px #6D184B;
+  }
+  button:hover {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+  a.play, a.back-home {
+    color: #FFF;
+    text-decoration: none;
+  }
+}
+
+.instructions {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: $height;
+  img {
+    width: 45%,
+  }
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+}
+
+.alphabet-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.correct-word {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.disabled {
+  pointer-events: none;
+  color: #b9b3b3;
+}
+
+.letter-active {
+  margin: 5px;
+}
+
+.letter-disabled {
+  margin: 5px;
+  text-decoration: underline;
+  color: #b9b3b3;
+}
+
+.underline {
+  border-bottom: 1px solid #000000;
+  margin: auto 5px;
+  width: 5%;
+}
+
+p.letter-invisible {
+  visibility: hidden;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+  img {
+    width: 10%;
+    height: 10%;
+  }
+}
+
+.about {
+  height: $height;
+
+}
+
+.author {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    width: 70%
+  }
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+
+
+

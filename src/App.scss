@@ -24,7 +24,6 @@ body {
 .button-options {
   display: flex;
   flex-direction: column;
-
 }
 
 .Home, .game, .about, .score {
@@ -173,8 +172,10 @@ p.letter-invisible {
   .alphabet-board {
     width: 100%;
   }
-  .game img {
+  .game {
+    img {
     width: 100%;
+    }
   }
   .score .title {
     display: flex;
